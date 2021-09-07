@@ -20,27 +20,27 @@ Anaconda는 사용이 편리하지만 설치 파일이 크고 디스크 사용�
 
 대부분 인터프리터들과 달리 Python은 버전 2.x ~ 3.x 사이에 하위 호환성이 없다. 버전2 코드를 버전3에서 실행하려면 수정이 필요하다. 버전3에서 개선,추가된 것들이 많으므로 다음과 같은 경우가 아니면 반드시 버전3을 사용한다.
 
-#### 버전 2를 써야하는 경우
-1. 스크립트를 실행해야 할 환경이 Python 버전2 인데 업그레이드 할 수 없다.
-2. 이미 쓰이고 있는 스크립트를 수정하려고 하는데, 그 스크립트가 Python 버전2 이다. -> 버전3으로 수정할 수 있는 분량이라고 하더라도 수정후 기존 동작을 검증할 자신이 없으면 수정하지 않는게 좋음.
+#### 부득이 버전 2를 써야하는 경우
+1. 스크립트를 돌리는 환경이 Python 버전2 인데 업그레이드 할 수 없다.
+2. 이미 쓰고 있는 스크립트를 수정하려고 하는데, 그 스크립트가 Python 버전2 이다. -> 버전3으로 수정할 수 있는 분량이라고 하더라도 수정후 기존 동작을 검증할 자신이 없으면 수정하지 않는 게 좋음. 사실상 하지 말 것.
 
 ---------------------
 
 ## 에디터
 
-* 메모장, vi 등
-* notepad++ 등
-* VS Code(Visual Studio Code) 등
-* 개발로 하는 정도라면 PyCharm이나 다른 Python 전용 에디터
+* 메모장, vi 
+* notepad++ 
+* VS Code(Visual Studio Code)
+* jupyter notebook (ipython)
+* PyCharm이나 다른 Python 전용 에디터
 
 ---------------------
 
-## Python 환경 구성하기 / VS Code 활용 
+## Python 환경 구성하기 / VS Code의 경우
 
-#### VS Code를 쓰지 않으실 분들은 (1)이후에 (6)으로 점프해서 (6)의 스크립트를 자신의 에디터에 쳐서 저장하고, CMD 창에서 "python.exe test1.py"로 실행합니다.
+* VS Code를 쓰지 않는다면 (1)이후 (6-2)로 점프
 
-
-(1) Python V3를 설치한다. 설치시 "Add Python 3.6 PATH" 또는 그에 유사한 옵션이 있으면 선택한다. PATH를 지정하면 아무 경로에서나 python 실행이 가능하다.
+(1) Python V3를 설치한다. 설치시 "Add Python 3.x PATH" 또는 그에 유사한 옵션이 있으면 선택한다. PATH를 지정하면 아무 경로에서나 python 실행이 가능하다.
 
 (2) VS Code를 설치, 실행한다.
 
@@ -54,7 +54,10 @@ Anaconda는 사용이 편리하지만 설치 파일이 크고 디스크 사용�
 
 (5) VS Code를 재시작 한다.
 
-(6) test1.py라는 이름의 스크립트를 아래와 같이 작성하고 화면의 아무곳에서나 마우스 오른쪽 버튼을 눌러 "Run Python File in Terminal"을 실행한다. 결과는 하단 터미널 창에 출력된다.
+(6-1) test1.py라는 이름의 스크립트를 아래와 같이 작성하고 화면의 아무곳에서나 마우스 오른쪽 버튼을 눌러 "Run Python File in Terminal"을 실행한다. 결과는 하단 터미널 창에 출력된다.
+* ![VS Code test run](https://secuwave.github.io/secure3/learn_script/02/vscode_python_testrune.png)
+
+(6-2) test1.py라는 이름의 스크립트를 에디터에서 아래와 같이 작성하고, cmd윈도우에서 "python.exe test1.py"로 실행한다. cmd 윈도우(표준출력)에 출력된다.
 * ![VS Code test run](https://secuwave.github.io/secure3/learn_script/02/vscode_python_testrune.png)
 
 ---------------------
