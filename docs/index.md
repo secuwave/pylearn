@@ -1,37 +1,39 @@
-## Welcome to GitHub Pages
+# Openbase Learning Script
+## 1. Quick Start
 
-You can use the [editor on GitHub](https://github.com/secuwave/pylearn/edit/main/docs/index.md) to maintain and preview the content for your website in Markdown files.
+### 설명 자료: [OpenbaseSecurity_LearningScript_01.pdf](./01/OpenbaseSecurity_LearningScript_01.pdf)
+### 실습: [내용보기](./01/exercise00.md)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+--------------------
 
-### Markdown
+## 2. Python(1)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 미리 보기: [Python 작업 환경 및 테스트 실행](./02/python_setup.md)
+  * 한번 읽고 샘플 코드를 실행해 보고 오시면 좋습니다.
 
-```markdown
-Syntax highlighted code block
+### 설명자료: [OpenbaseSecurity_LearningScript_02.pdf](./02/OpenbaseSecurity_LearningScript_02.pdf)
 
-# Header 1
-## Header 2
-### Header 3
+### 실습: [다수의 도메인 목록에 대해 Whois 조회하기](./02/exercise.md)
 
-- Bulleted
-- List
+--------------------
 
-1. Numbered
-2. List
+## 3. Python(2)
 
-**Bold** and _Italic_ and `Code` text
+### 과제: [json 정보 작성](./03/homework.md)
 
-[Link](url) and ![Image](src)
-```
+### 설명자료: [OpenbaseSecurity_LearningScript_03.pdf](./03/OpenbaseSecurity_LearningScript_03.pdf)
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 실습: [파일에 있는 도메인 목록을 읽어서 whois 정보를 추출, csv 파일로 정리하기](./03/exercise00.md)
 
-### Jekyll Themes
+--------------------
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/secuwave/pylearn/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## 4. 정규표현
 
-### Support or Contact
+### 설명자료: [OpenbaseSecurity_LearningScript_04.pdf](./04/OpenbaseSecurity_LearningScript_04.pdf)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+--------------------
+
+## 5. Python(3)
+
+### 설명자료: [OpenbaseSecurity_LearningScript_05.pdf](./05/OpenbaseSecurity_LearningScript_05.pdf)
+### 실습: [내용보기](./05/exercise.md)
