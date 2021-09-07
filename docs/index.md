@@ -2,7 +2,7 @@
 
 ## 1. Quick Start
 
-[내용](/docs/01/cotent)
+[내용](/docs/01/cotent.md)
 
 ------------------
 
