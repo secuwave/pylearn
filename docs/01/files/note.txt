@@ -1,0 +1,43 @@
+https://secuwave.github.io/AlertLogic/main
+
+https://secuwave.github.io/secure3/script_1_1
+
+
+들여쓰기 – 가독성, Python에서는 블록 구분하므로 더욱 중요
+Font – 고정폭, l vs I
+
+Path
+
+인터프리터 버전(Python)
+
+스크립트
+https://ko.wikipedia.org/wiki/%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8_%EC%96%B8%EC%96%B4
+http://jokergt.tistory.com/81
+
+자주 수행하는 작업 자동화
+외부 프로그램 명령을 호출하여 실행
+특정 프로그램안에서만 작동하여 단독 실행할 수 없음
+소스코드를 컴파일하지 않고 그대로 실행할 수 있는 프로그래밍 언어
+
+
+나중에 할 것
+bash shebang 라인
+ http://mug896.github.io/bash-shell/shebang.html
+ https://wiki.kldp.org/HOWTO/html/Adv-Bash-Scr-HOWTO/sha-bang.html
+ 
+path의 중요성 - cron의 예를 들어서, path가 망가지면 os가 동작하지 못한다.
+스크립트 실행 위치
+
+크론으로 반복하기
+백그라운드 돌리기 
+PS1 변경: echo $PS1
+PS1=#
+shell 프로세스 생성
+환경변수 export, source
+comment
+permission
+
+
+폰트는 어떤 게 좋을까요?
+문자열은 “와 ‘ 중 무엇으로 
+space를 넣어야 할까요?
