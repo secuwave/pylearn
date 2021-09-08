@@ -65,6 +65,11 @@ Anaconda는 사용이 편리하지만 설치 파일이 크고 디스크 사용�
 (6-2) test1.py라는 이름의 스크립트를 에디터에서 아래와 같이 작성하고, cmd윈도우에서 "python.exe test1.py"로 실행한다. cmd 윈도우(표준출력)에 출력된다.
 * ![VS Code test run](https://secuwave.github.io/secure3/learn_script/02/vscode_python_testrune.png)
 
+
+## python.org에서 python을 설치한 경우 IDE 사용
+
+* ![python.org IDE](./pythonorg_ide.png)
+
 ---------------------
 
 ## Python 교재 추천
@@ -72,5 +77,12 @@ Anaconda는 사용이 편리하지만 설치 파일이 크고 디스크 사용�
 점프 투 파이썬: [https://wikidocs.net/book/1](https://wikidocs.net/book/1)
 * 15년 이상 업데이트되고 있는 무료 파이썬 강좌 사이트. 책으로도 출판됨.
 * 파이썬의 기본부터 잘 설명
+
+## Python 활용 기본 지식: 
+
+* 자료형, 제어구조, 입출력
+* 점프 투 파이썬(https://wikidocs.net/book/1) 2, 3, 4장
+
+* ![python base chapters](./base_chapters.png)
 
 ---------------------
