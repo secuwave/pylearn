@@ -81,7 +81,7 @@ Anaconda는 사용이 편리하지만 설치 파일이 크고 디스크 사용�
 ## Python 활용 기본 지식: 
 
 * 자료형, 제어구조, 입출력
-* 점프 투 파이썬(https://wikidocs.net/book/1) 2, 3, 4장
+* 점프 투 파이썬 2, 3, 4장
 
 * ![python base chapters](./base_chapters.png)
 
