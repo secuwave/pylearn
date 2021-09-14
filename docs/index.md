@@ -1,9 +1,7 @@
 # OPENBASE Pylearn
 
-## 1. Quick Start
-
-* [내용](./01/content.md)
+## 1. [Quick Start](./01/content.md)
 
 ------------------
 
-
+## 2. [Python basic](./02/content.md)
