@@ -22,7 +22,7 @@
 * Python 활용 기본 지식: 
   * 자료형, 제어구조, 입출력
   * 점프 투 파이썬 2, 3, 4장
-  * ![python base chapters](./base_chapters.png)
+  * ![python base chapters](./files/base_chapters.png)
 
 ---------------------
 ### 실습:
