@@ -13,16 +13,14 @@
 ---------------------
 ### 교재
 
-#### 점프 투 파이썬
-
-[https://wikidocs.net/book/1](https://wikidocs.net/book/1)
+#### 점프 투 파이썬 [https://wikidocs.net/book/1](https://wikidocs.net/book/1)
 
 * 15년 이상 업데이트되고 있는 무료 파이썬 강좌 사이트. 책으로도 출판됨.
 * 파이썬의 기본부터 잘 설명
 * Python 활용 기본 지식: 
   * 자료형, 제어구조, 입출력
   * 점프 투 파이썬 2, 3, 4장
-  * ![python base chapters](./files/base_chapters.png)
+* ![python base chapters](./files/base_chapters.png)
 
 ---------------------
 ### 실습:
