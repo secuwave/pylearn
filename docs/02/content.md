@@ -2,9 +2,11 @@
 
 ### [Python 善](./201.md)
 
+### [import this](./202.md)
+
 ### 자료형 - 숫자
 
-[https://wikidocs.net/12]https://wikidocs.net/12
+[https://wikidocs.net/12](https://wikidocs.net/12)
 
 * 정수(int) : 정수
 * 실수(float) : 소수점이 포함된 숫자, e 표기법도 가능. 다른 언어에서 실수를 float과 double로 나누는데, Python은 float 타입만 있음
