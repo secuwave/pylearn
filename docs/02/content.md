@@ -1,8 +1,6 @@
 ## 2. Python basic
 
-### [Python 善](./201.md)
-
-### [import this](./202.md)
+### [Python 善 - import this](./201.md)
 
 ### 자료형 - 숫자
 
@@ -49,6 +47,30 @@ k = 27%6
 ```
 * 왜 유용할까?
 
+### 자료형 - 문자열
+
+* wrapping: " or ' ??
+* escape
+
+```
+print('\n')
+print('\a')
+```
+
+* 문자열 iteration
+
+```
+dummy = 'this is a test.'
+
+for i in dummy:
+    print(i)
+```
+
+* split and join
+
+```
+```
+
 
 ### 실습:
 
@@ -56,8 +78,5 @@ k = 27%6
 
 * 100개의 빵을 7명에게 균등 분배하기
 
-
-
-### 자료형 - 
-
+* import this 만들기
 
