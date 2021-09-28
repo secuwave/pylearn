@@ -69,14 +69,25 @@ for i in dummy:
 * split and join
 
 ```
+dummy = 'this is a test.'
+dummy_list = dummy.split(' ')
+dummy_back = ' '.join(dummy_list)
 ```
+
+### iterable(collections.Iterable)
+
+* iterable 객체 - 반복 가능한 객체
+* 대표적 iterable 타입 - list, dict, set, str, bytes, tuple, range
+
+
+### import 와 __main__
 
 
 ### 실습:
 
 * 100번째 마다 진도 표시하기
 
-* 100개의 빵을 7명에게 균등 분배하기
+* 100개의 빵을 7명에게 임의로/균등하게 분배하기
 
 * import this 만들기
 
