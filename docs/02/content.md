@@ -49,6 +49,8 @@ k = 27%6
 
 ### 자료형 - 문자열
 
+[https://wikidocs.net/13](https://wikidocs.net/13)
+
 * wrapping: " or ' ??
 * escape
 
