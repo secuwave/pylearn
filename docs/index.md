@@ -5,3 +5,6 @@
 ------------------
 
 ## 2. [Python basic](./02/content.md)
+
+
+## 3. [Python basic 2](./03/content.md)
