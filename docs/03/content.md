@@ -22,17 +22,20 @@ num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 * 슬라이싱
 * 더하기: append vs extend에서 설명
 * 0이 200개 있는 list 만들기
+
 ```
 ???
 ``` 
 * 길이
 * 요소 수정
 * 요소 삭제: del
+
 ```
 del num[4]
 ```
 
 * iteration 중 요소 삭제 주의!! - 결과를 예측할 수 없음
+
 ```
 num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -55,6 +58,7 @@ new = num + [301, 302]
 ```
 
 * list 정렬
+
 ```
 a = [1, 4, 3, 2]
 a.sort()
@@ -76,6 +80,7 @@ b.sort()
 * 대부분 속성이 리스트와 같으나 한번 정한 값을 변경할 수 없음
 
 * tuple의 사용
+
 ```
 def calculate(input):
     return input*10, input/10
@@ -89,6 +94,7 @@ ret = calculate(550)  # ret의 type은?
 ### 실습:
 
 * 숫자 목록을 입력받아 짝수만 걸러내기
+
 ```
 
 def filter_even(input_str):
