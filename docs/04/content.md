@@ -1,4 +1,4 @@
-## 3. Python basic -3
+## 4. Python basic -3
 
 ### 딕셔너리 - dict
 [https://wikidocs.net/16](https://wikidocs.net/16)
@@ -15,13 +15,51 @@
 * 리스트, 튜플처럼 iteration도 가능하지만 순서가 의미있지는 않음
 
 
-* 리스트 샘플
+### 딕셔너리 샘플
 
 ```
-num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+me = {
+    'name': 'ykkim',
+    'age': 30,
+    'address': 'seoul sonpa',
+    'phone': '010-999-8888',
+    'birth': '10/02',
+    'family': [
+        {'role': 'father', 'name': 'kimsj', 'age': 74},
+        {'role': 'mother', 'name': 'kimkh', 'age': 69},
+        {'role': 'sister', 'name': 'kimjh', 'age': 35},
+        {'role': 'brother', 'name': 'kimdh', 'age': 30}
+    ]
+}
+
+mycompany = {
+    'name': 'openbase',
+    'birth': '1992/09/16',
+    'member': ['kim', 'park', 'lee'],
+    'location': 'Seoul'
+}
+
 
 ```
-#### list 다루기
+
+* 딕셔너리 액세스하기
+
+```
+print(me.get('name'))
+print(me.get('family')[0])
+print(me.get('family'))
+
+# 아빠 나이 구하기1
+for member in me.get('family'):
+    if member.get('role') == 'father':
+        print('father\'s age: {}'.format(member.get('age')))
+
+# 아빠 나이 구하기2
+print('father\'s age: {}'.format(me.get('family2').get('father').get('age')))
+
+```
+
+#### 딕셔너리에서 값 가져오기
 
 * 인덱싱
 * 슬라이싱
