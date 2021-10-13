@@ -133,10 +133,88 @@ print(me[search_key])  # error
 
 #### 특정 key가 없으면 기본값 부여
 
-get으로 key를 조회하면 key의 값이 없을 경우, 기본값(대체값) 부여를 할 수 있다.
+get으로 key를 조회하면 key가 없어 값이 None일 경우, 기본값(대체값) 부여를 할 수 있다.
 
 ```
 search_key = 'annual_income'
 my_annual_income = me.get(search_key, 3000000)
 print(my_annual_income)
+```
+
+* 기본값 설정 주의!! key가 있는데 그 값이 None이면 기본값(대체값)이 부여되지 않는다.
+```
+search_key = 'weight'
+my_weight = me.get(search_key, 70)
+print(my_weight)
+```
+
+### 실습 
+
+XML <-> dictionary <-> json
+
+[XML example(Microsoft)](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms762271(v=vs.85))
+
+* XML을 딕셔너리로 변환하기
+
+```
+import xmltodict
+import pprint
+
+
+xml_string = """<?xml version="1.0"?>
+<catalog>
+   <book id="bk101">
+      <author>Gambardella, Matthew</author>
+      <title>XML Developer's Guide</title>
+      <genre>Computer</genre>
+      <price>44.95</price>
+      <publish_date>2000-10-01</publish_date>
+      <description>An in-depth look at creating applications 
+      with XML.</description>
+   </book>
+   <book id="bk102">
+      <author>Ralls, Kim</author>
+      <title>Midnight Rain</title>
+      <genre>Fantasy</genre>
+      <price>5.95</price>
+      <publish_date>2000-12-16</publish_date>
+      <description>A former architect battles corporate zombies, 
+      an evil sorceress, and her own childhood to become queen 
+      of the world.</description>
+   </book>
+   <book id="bk103">
+      <author>Corets, Eva</author>
+      <title>Maeve Ascendant</title>
+      <genre>Fantasy</genre>
+      <price>5.95</price>
+      <publish_date>2000-11-17</publish_date>
+      <description>After the collapse of a nanotechnology 
+      society in England, the young survivors lay the 
+      foundation for a new society.</description>
+   </book>
+</catalog>
+"""
+
+
+# print(xml_string)
+
+pp = pprint.PrettyPrinter(indent=4)
+catalog_dict = xmltodict.parse(xml_string, dict_constructor=dict)  # catalog: dict type
+pp.pprint(catalog_dict)
+```
+
+* 딕셔너리를 json으로 변환하기
+
+```
+import json
+
+json_string = json.dumps(catalog_dict, indent=4)
+print(json_string)
+```
+
+* json을 dict로 변환하기
+
+```
+catalog_dict_new = ???
+pp.pprint(catalog_dict_new)
 ```
