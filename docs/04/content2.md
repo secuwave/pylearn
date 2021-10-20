@@ -97,3 +97,31 @@ if __name__ == '__main__':
 
 추가작업
 * 데이터가 복잡하니 관심있는 필드만 뽑아서 csv로 보자.
+
+```
+import whois
+import pprint
+
+pp = pprint.PrettyPrinter(indent=4)
+
+
+def read_input():
+    input_str = input('체크할 도메인을 입력하세요(,로 분리): ')
+    input_list = input_str.split(',')
+    return input_list
+
+
+def check_whois(address_list):
+    print('org,city,name server')
+    for addr in address_list:
+        winfo = whois.whois(addr)
+        print('{},{},{}'.format(winfo))
+        # pp.pprint(winfo)
+        print('{},{},{}'.format(winfo.get('org'), winfo.get('city'), winfo.get('name_servers')[0]))
+
+
+if __name__ == '__main__':
+    address_list = read_input()
+    check_whois(address_list)
+
+```
