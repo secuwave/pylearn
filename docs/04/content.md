@@ -99,7 +99,7 @@ me = {
     'phone': '010-999-8888',
     'birth': '10/02',
     'job': 'engineer',
-    'company': mycompany  # <----- 회사
+    'company': mycompany,  # <----- 회사
     'family': [
         {'role': 'father', 'name': 'kimsj', 'age': 74},
         {'role': 'mother', 'name': 'kimkh', 'age': 69},
@@ -124,8 +124,8 @@ me.update({key: value})
 
 ```
 me.update({'company': mycompany})  # me에 key가 있으면 value교체
-me.update({'company2': mycompany})  # me에 key가 없으면 key & value 추가
 
+me.update({'company2': mycompany})  # me에 key가 없으면 key & value 추가
 ```
 #### 딕셔너리 iteration - item
 
@@ -145,8 +145,10 @@ for key, value in me.items():
 * 딕셔너리 key들
 
 ```
-keys = me.keys()  # keys의 타입은 리스트
+keys = me.keys()  # keys의 타입은 dict_keys, 리스트와 같은 방식으로 iteration 가능
 print(keys)
+
+key_list = list(keys)
 ```
 
 * key를 이용해서 딕셔너리 iteration
@@ -159,18 +161,21 @@ for key in me.keys():
 #### 특정 key가 있을 경우에 그 값을 추출(프린트)하려면
 
 ```
+### 1
 if 'company' in me.keys():
     print(me.get('company'))
 
+### 2
+if 'company' in me:
+    print(me.get('company'))
 ```
 
 * (권장)사용하는 값이 반복되면 상수(constant value)로 정의
 
 ```
 search_key = 'company'
-if search_key in me.keys():
+if search_key in me:
     print(me.get(search_key))
-
 ```
 
 #### key가 없으면? - [] 조회의 문제
@@ -265,6 +270,6 @@ print(json_string)
 (3) json을 dict로 변환하기
 
 ```
-catalog_dict_new = ???
+catalog_dict_new = json.loads(json_string)
 pp.pprint(catalog_dict_new)
 ```
