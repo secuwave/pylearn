@@ -115,7 +115,6 @@ def check_whois(address_list):
     print('org,city,name server')
     for addr in address_list:
         winfo = whois.whois(addr)
-        print('{},{},{}'.format(winfo))
         # pp.pprint(winfo)
         print('{},{},{}'.format(winfo.get('org'), winfo.get('city'), winfo.get('name_servers')[0]))
 
