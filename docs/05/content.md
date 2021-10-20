@@ -7,7 +7,7 @@
 
 * iterable 객체 - 반복 가능한 객체
 * 대표적 iterable 타입 - list, tuple(튜플), dict, set(집합), str(문자열), bytes, range
-* dict(딕셔너리)는 iterable의 속성을 가짐
+* set(집합)은 iterable의 속성을 가짐
 
 ### 집합
 
@@ -27,7 +27,7 @@ print(my_set)
 ```
 
 ```
-my_set2 = ("HELLO")
+my_set2 = set("HELLO")
 print(my_set2)
 ```
 
@@ -93,7 +93,7 @@ s1.remove(2)
 print(s1)
 ```
 
-### whois 조회 - 업그레이드
+### 실습: whois 조회 - 업그레이드
 
 * 입력받은 도메인 리스트에 space가 들어가 있으면?
 * 입력받은 도메인 리스트에 중복된 도메인이 있으면?
@@ -112,14 +112,14 @@ pp = pprint.PrettyPrinter(indent=4)
 
 def read_input():
     input_str = input('체크할 도메인을 입력하세요(,로 분리): ')
-    # TODO
+    temp = input_str.replace(' ', '')
     input_list = temp.split(',')
     return input_list
 
 
 def check_whois(address_list):
-    # TODO
-    for addr in ???:
+    address_set = set(address_list)
+    for addr in address_set:
         winfo = whois.whois(addr)
         pp.pprint(winfo)
 

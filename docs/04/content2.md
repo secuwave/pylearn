@@ -21,7 +21,7 @@ me = {
     'phone': '010-999-8888',
     'birth': '10/02',
     'job': 'engineer',
-    'company': mycompany  # <----- 회사
+    'company': mycompany,  # <----- 회사
     'family': [
         {'role': 'father', 'name': 'kimsj', 'age': 74},
         {'role': 'mother', 'name': 'kimkh', 'age': 69},
