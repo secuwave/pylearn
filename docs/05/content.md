@@ -103,7 +103,7 @@ print(s1)
 ```
 # Whois 조회
 
-import whois  # pip install whois
+import whois  # pip install python-whois
 import pprint
 
 ## dir(whois)
