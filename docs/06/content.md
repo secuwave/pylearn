@@ -94,6 +94,13 @@ while 1:
 loop 순환 실행이 너무 빠르다!!! 
 
 ```
+import time
+
+count = 0
+while 1:
+    count = count + 1
+    print(f'inside while loop: {count}')
+    time.sleep(1)
 ```
 
 리스트의 모든 멤버를 꺼내서 100을 곱하기
@@ -117,6 +124,6 @@ while len(a):
 
 더 개선
 ```
-while ???:
+while a:
     print(a.pop()*100)
 ```
