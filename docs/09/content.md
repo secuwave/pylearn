@@ -58,7 +58,7 @@ while command != 'quit':
     print(f'  >> your command: {command}, current number: {number}')
 ```
 
-명령어를 입력 받아 'plus'이면 number를 1 증가, 'minus'면 1감소시킨다.
+명령어를 입력 받아 'p'이면 number를 1 증가, 'm'이면 number를 1 감소시킨다.
 ```
 number = 0
 
@@ -95,7 +95,7 @@ while command != 'quit':
     print(f'  >> your command: {command}, current number: {number}')
 ```
 
-명령어를 입력 받아, 지원하지 않는 명령어이면 다시 하라고 알려준다.
+명령어를 입력 받아, 지원하지 않는 명령어이면 오류라고 알려준다.
 ```
 number = 0
 
@@ -134,7 +134,9 @@ while command != 'quit':
     print(f'  >> your command: {command}, current number: {number}')
 ```
 
-끝? quit을 입력해도 invalid command로 처리되므로 수정
+끝? quit을 입력해도 invalid command로 처리되므로 수정. 
+
+while True loop으로 바꾸고, loop 안에서 'quit'을 만나면 break함
 ```
 number = 0
 

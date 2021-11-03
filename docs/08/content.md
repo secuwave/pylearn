@@ -50,7 +50,12 @@ def how_to_get_there(card, money):
     elif ???: 
     else:
         ....
+
+
+how_to_get_there(False, 7000)
 ```
+
+정리:
 
 ```
 def how_to_get_there(card, money):
@@ -63,13 +68,15 @@ def how_to_get_there(card, money):
             print("따릉이를 탄다")
         else:
             print("걷는다.")
+
+
+how_to_get_there(False, 7000)
 ``` 
 
 ### 예제 3
 
 자동차 주행시간을 도착시간(endtime) - 출발시간(begintime)으로 계산하는데, 자정에 도착한 경우 24대신 0으로 기재한 사람들이 섞여 있다. 이럴 경우 주행 시간을 계산하기 위해 endtime이 0인 경우 24로 보정하는 처리가 필요하다.
 
- 
 ```
 def get_driving_time(begintime, endtime):
     if endtime == 0:
@@ -77,13 +84,18 @@ def get_driving_time(begintime, endtime):
     
     return endtime - begintime
 
+
+get_driving_time(15, 0)
 ```
+
 변형
 
 ```
 def get_driving_time(begintime, endtime):
-    endtime = 24 ????
+    endtime = 24 if endtime == 0 else endtime
     return endtime - begintime
 
+
+get_driving_time(15, 0)
 ```
 
