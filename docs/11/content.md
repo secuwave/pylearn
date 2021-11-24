@@ -7,8 +7,7 @@
 * 문자열로 받는다!
 
 ```
-number = input("숫자를 입력하세요: ")
-숫자를 입력하세요:
+number = input("숫자를 입력하세요: ") 
 ```
 
 #### 입력값에 곱하기 처리하기
@@ -17,14 +16,15 @@ def multiply10(n):
     return n*10
 
 number = input("숫자를 입력하세요: ")
-숫자를 입력하세요:
 
 ret = multiply10(number)
 print(ret)
 
 ```
 * 수정이 필요한 부분은?
-
+```
+ret = multiply10(int(number))
+```
 
 ### 숫자를 맞출때까지 계속 시도하는 게임
 
@@ -36,7 +36,7 @@ intro = '''
 .. 그만하고 싶으면 '포기'를 입력하세요
 '''
 
-prompt = '''숫자: '''
+prompt = '숫자: '
 
 def is_matched(guess):
     if guess == secret:

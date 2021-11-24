@@ -47,7 +47,7 @@ for i in range(5):
 
 * [테스트 로그](./0612portal.log.txt)
 
-* 줄 읽어보기
+* 한 줄 읽어보기
 ```
 filename = '0612portal.log'
 f = open(filename, 'r')
@@ -128,31 +128,31 @@ finally:
     file.close()
 ```
 
-* context manager with
+* context manager with를 이용한 똑같은 코드
+  * with 영역이 끝나면 자동으로 열린 자원을 close한다.
 
 ```
 with open('a.txt', 'w') as of:
     of.write('TEST')
 ```
 
-#### 내용 골라서 쓰기 - context 적용
+#### 내용 골라서 쓰기 - with context 방식으로 개선
 
 ```
 ifile = '0612portal.log'
 ofile = 'output.txt'
 
-???
-???
-
-while True:
-    line = iif.readline()
-    if not line:
-        break
-    if 'start' in line.lower():
-        of.write(line)
-    elif 'stop' in line.lower():
-        of.write(line)
-    elif 'fail' in line.lower():
-        of.write(line)
+with open(ifile, 'r') as iif:
+    with open(ofile, 'w') as of:
+        while True:
+            line = iif.readline()
+            if not line:
+                break
+            if 'start' in line.lower():
+                of.write(line)
+            elif 'stop' in line.lower():
+                of.write(line)
+            elif 'fail' in line.lower():
+                of.write(line)
 
 ```
