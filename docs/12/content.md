@@ -45,7 +45,7 @@ for i in range(5):
 
 ### 파일 읽기
 
-* [테스트 로그](./0612portal.log)
+* [테스트 로그](./0612portal.log.txt)
 
 * 줄 읽어보기
 ```
