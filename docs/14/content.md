@@ -1,9 +1,5 @@
 # 정규표현
 
-## 정규표현
-[OpenbaseSecurity_LearningScript_04.pdf](./OpenbaseSecurity_LearningScript_04.pdf)
-
-
 ## python에서 정규표현 사용 기초
 
 search() vs match() vs findall()
