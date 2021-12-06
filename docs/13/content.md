@@ -12,14 +12,11 @@
 
 ## 참고자료
 * 초보자를 위한 정규표현식 가이드
-  * !(https://www.slideshare.net/ibare/ss-39274621)[https://www.slideshare.net/ibare/ss-39274621]
+  * [https://www.slideshare.net/ibare/ss-39274621](https://www.slideshare.net/ibare/ss-39274621)
   * 정규식 기초를 잘 설명
 
-[OpenbaseSecurity_LearningScript_04.pdf](./OpenbaseSecurity_LearningScript_04.pdf)
-
-
 * Regular Expression Quick Reference
-  * !(https://neo.dmcs.pl/pios/Regular_Expression_Quick_Reference.pdf)[https://neo.dmcs.pl/pios/Regular_Expression_Quick_Reference.pdf]
+  * [https://neo.dmcs.pl/pios/Regular_Expression_Quick_Reference.pdf](https://neo.dmcs.pl/pios/Regular_Expression_Quick_Reference.pdf)
 
   * 정규표현의 basic feature를 요약
   * 위 자료에서 “Character Classes”, “Repetition”, “Anchors” 파트 정도를 익히면 일반적인 정규식 사용 가능
@@ -28,3 +25,4 @@
 (다른 잘 설명한 사이트가 많으니, 필요 시 정규식 기본을 검색 권장)
 
 ## 실습
+
