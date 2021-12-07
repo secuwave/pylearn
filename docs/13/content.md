@@ -107,7 +107,7 @@ cl
 ick this button
 ```
 
-
+```
 test: dashboard.*with vs (?s)dashboard.*with
 
 test: (?si)cli.*ck
@@ -115,6 +115,7 @@ test: (?si)cli.*?ck
 test: (?si)^cli.*ck
 
 test: (?si)cli.*button vs (?si)cli.*?button
+```
 
 text
 ```
@@ -129,9 +130,10 @@ Rebert R Brown
 22323-343543-22323
 22323-343543-22320
 ```
+```
 test: (.+).+\1 ???
 test: (.+)([\s-]).+\2\1
-
+```
 
 
 ```
@@ -140,9 +142,12 @@ test: (.+)([\s-]).+\2\1
 3000원
 5000원
 10000원
+10000W
 ```
-test: .+(?=원)  # look ahead
 
+```
+test: .+(?=원)  # look ahead  vs .+(?!원)  # look ahead
+```
 
 ```
 1: $600.4
@@ -150,4 +155,7 @@ test: .+(?=원)  # look ahead
 3: $47.33
 4: $112.34
 ```
+
+```
 test: (?<=$)[0-9.]+  # look behind
+```
