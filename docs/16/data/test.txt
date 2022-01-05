@@ -1,0 +1,20 @@
+Authenticode Signature
+
+  SECURITY     rva: 0x0         size: 0x0       
+ptr = 0x7fe4f386d000 base = 0x7fe4f386d000 hsize = 0 total_size =440896 size =0Unsigned binary
+
+
+PE file info
+
+[[ Basic Info ]] 
+EntryPoint Address : 0xd8000
+Image Base         : 0x400000
+TimeStamp          : 0x5e4131df ( Mon Feb 10 19:35:11 2020 )
+MachineType        : 0x14c
+
+ [[ File Info]]
+Orignal File name : Authorities brought the gunman's mother from his hometown
+File Version      : 1, 0, 0, 1
+Company Name      : even bodies have been extracted from the Terminal
+Product Name      : The gunman had a machine gun that he had stolen
+File Description  : The shooting at a military base in Thailand's
