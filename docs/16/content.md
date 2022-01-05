@@ -73,7 +73,7 @@ except FileNotFoundError as e:
 
 #### 복수의 예외에 대한 처리
 
-1. 여러가지 예외가 발생하는 경우의 처리 - 개별 처리
+1 - 여러가지 예외가 발생하는 경우의 처리 - 개별 처리
 
 10000을 입력받은 숫자로 나누고, 결과를 'data2/result.txt에 기록한다.
 
@@ -102,7 +102,7 @@ if __name__ == '__main__':
 * ZeroDivisionError - 나누는 수가 0
 * TypeError - 연산이나 함수가 부적절한 형의 객체에 적용될 때 발생. 함수 인자로 문자열을 받아야 하는데, 숫자를 받음.
 
-FileNotFoundError 예외처리
+2 - FileNotFoundError 예외처리
 ```python
 def ex_test(file):
     test_number = 10000
@@ -125,7 +125,7 @@ if __name__ == '__main__':
 
 ```
 
-ValueError 예외처리
+3 - ValueError 예외처리
 ```python
 def ex_test(file):
     test_number = 10000
@@ -155,7 +155,7 @@ if __name__ == '__main__':
 
 ```
 
-ZeroDivisionError 예외처리
+4 - ZeroDivisionError 예외처리
 ```python
 def ex_test(file):
     test_number = 10000
@@ -190,7 +190,7 @@ if __name__ == '__main__':
 
 ```
 
-3가지 예외를 하나로 묶어서 처리하기
+5 - 3가지 예외를 하나로 묶어서 처리하기
 * 
 ```python
 def ex_test(file):
@@ -219,7 +219,7 @@ if __name__ == '__main__':
 
 ```
 
-3가지 예외를 하나로 묶어서 처리하기 - 2
+6 - 3가지 예외를 하나로 묶어서 처리하기 - 2
 ```python
 def ex_test(file):
     test_number = 10000
@@ -242,20 +242,22 @@ if __name__ == '__main__':
     ex_test(file)
 
 ```
-
-
-## TCP 포트 스캔
+## TCP 포트 스캔 예제
 
 지정한 호스트에 포트가 열려 있는지 스캔한다.
 
-### 소켓 생성 함수 형식
-* sock = socket.socket (socket_family, socket_type)
+### 소켓 생성 정보
 
-Socket Family
+1 - 소켓 생성 함수 형식
+
+```python
+sock = socket.socket (socket_family, socket_type)
+```
+2 - Socket Family
 * AF_INET: IPv4
 * AF_INET6: IPv6
 
-Socket Type:
+3 - Socket Type:
 * SOCK_STREAM: TCP
 * SOCK_DGRAM: UDP
 
@@ -270,6 +272,7 @@ sock = socket.socket (socket.AF_INET, socket.SOCK_STREAM)
 ```python
 remote_host_ip = socket.gethostbyname("hostname")
 ```
+### 지정한 호스트에 대해 특정 범위 포트 스캔
 
 ```python
 import socket
